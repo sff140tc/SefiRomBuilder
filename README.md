@@ -1,6 +1,10 @@
 ![QuantumROM Logo](QuantumROM/logo/QuantumROM.jpg)
 
-## 📌 Overview.
+## 📒 Credits.
+Al Nomad for the original QuantumROM script
+AlfCraft07 for making culina which is based on the QuantumROM script, in which i was allowed to make my own 
+version
+### 📌 Overview.
 This Custom ROM is built by combining and refining features from multiple projects, including UNICA, Legacy-UI, and AstroRom.
 - The goal of this ROM is to provide a clean, optimized, and stable One UI experience with enhanced usability and performance.
 
