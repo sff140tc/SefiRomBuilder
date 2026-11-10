@@ -1,4 +1,4 @@
-name: Culina ROManitatis
+name: Build SefiRom
 
 on:
   workflow_dispatch:
