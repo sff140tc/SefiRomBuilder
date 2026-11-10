@@ -26,7 +26,7 @@ source "$(pwd)/scripts/debloat.sh"
 source "$(pwd)/scripts/git_utils.sh"
 source "$(pwd)/scripts/QuantumRom.sh"
 
-REPO="SN-Abdullah-Al-Noman/QuantumROM"
+REPO="AlfCraft07/culina"
 BRANCH="Devices"
 
 if [ "$STOCK_DEVICE" != "None" ]; then
@@ -76,15 +76,5 @@ B_ID="$(grep -m1 '^ro.system.build.id=' "$FIRM_DIR/system/system/build.prop" | c
 B_V="$(grep -m1 '^ro.system.build.version.incremental=' "$FIRM_DIR/system/system/build.prop" | cut -d= -f2 | tr -d '\r')"
 BUILD_PROP "$FIRM_DIR" "system" "ro.build.display.id" "${B_ID}.${B_V}"
 BUILD_PROP "$FIRM_DIR" "product" "ro.build.display.id" "${B_ID}.${B_V}"
-BUILD_PROP "$FIRM_DIR" "system" "ro.build.date.utc" "$(date +%s)"
-BUILD_PROP "$FIRM_DIR" "product" "ro.build.date.utc" "$(date +%s)"
-BUILD_PROP "$FIRM_DIR" "system" "ro.build.date" "$(LANG=C date '+%a %b %e %H:%M:%S %Z %Y')"
-BUILD_PROP "$FIRM_DIR" "product" "ro.build.date" "$(LANG=C date '+%a %b %e %H:%M:%S %Z %Y')"
-BUILD_PROP "$FIRM_DIR" "system" "ro.system.build.date.utc" "$(date +%s)"
-BUILD_PROP "$FIRM_DIR" "system_ext" "ro.system_ext.build.date.utc" "$(date +%s)"
-BUILD_PROP "$FIRM_DIR" "product" "ro.product.build.date.utc" "$(date +%s)"
-BUILD_PROP "$FIRM_DIR" "system" "ro.system.build.date" "$(LANG=C date '+%a %b %e %H:%M:%S %Z %Y')"
-BUILD_PROP "$FIRM_DIR" "system_ext" "ro.system_ext.build.date" "$(LANG=C date '+%a %b %e %H:%M:%S %Z %Y')"
-BUILD_PROP "$FIRM_DIR" "product" "ro.product.build.date" "$(LANG=C date '+%a %b %e %H:%M:%S %Z %Y')"
 
 BUILD_IMG "$FIRM_DIR" "all" "$OUTPUT_FILESYSTEM" "$OUT_DIR"
