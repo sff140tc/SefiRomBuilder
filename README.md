@@ -1,4 +1,4 @@
-![QuantumROM Logo](QuantumROM/logo/QuantumROM.jpg)
+![SefiRomBuilder Logo](Sefithings/logo/Project 21 [9AFD7E7].png)
 
 ## 📒 Credits.
 Al Nomad for the original QuantumROM script
