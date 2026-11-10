@@ -1,4 +1,4 @@
-![SefiRomBuilder Logo](Sefithings/logo/Project 21 [9AFD7E7].png)
+https://github.com/sff140tc/SefiRomBuilder/blob/culina-v2/Sefithings/logo/Project%2021%20%5B9AFD7E7%5D.png?raw=true
 
 ## 📒 Credits.
 Al Nomad for the original QuantumROM script
