@@ -290,6 +290,11 @@ jobs:
           PATCH_SELINUX "$FIRM_DIR"
           DISABLE_SECURITY "$FIRM_DIR"
 
+      - name: Apply custom identity/branding
+        run: |
+          chmod +x scripts/apply_identity.sh
+          bash scripts/apply_identity.sh
+          
       - name: Build img - ${{ inputs.OUTPUT_FILESYSTEM }}
         run: |
           source "$(pwd)/scripts/QuantumRom.sh"
